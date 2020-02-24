@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
+        <!--Need this script link to pull in the angular library-->
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
     </head>
     <body>
-        <!--Desginate the app by adding ng-app=""-->
-        <div ng-app="">
+        <!--Desginate the app by adding ng-app="" it also initializes the Angular App-->
+        <div ng-app="demoApp">
             <!--Get input from the user to use later-->
             <h2>Name : <input type="text" ng-model="name"></h2>
             <!--Update the page without even refreshing by useing angular to fill in the data!-->
