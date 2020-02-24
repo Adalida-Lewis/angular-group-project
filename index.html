@@ -13,16 +13,17 @@
             <!--Update the page without even refreshing by useing angular to fill in the data!-->
             <p>Hello {{name}}</p>
 
-            <h3>Lets do some math!</h3>
-            <!--Create a directive to bind the input from the user. Kind of like setting a variable name-->
-            <p>Enter in a number: <input type="number" ng-model="number1"></p>
-            <p>{{number1.$vaild}}</p>
-            <p>Enter in a second number: <input name=num2 type="number" ng-model="number2"></p>
-            {{num1.$vaild}}
-            <!--Create another directive-->
-            <p>Enter in a second number: <input type="number" ng-model="number2"></p>
-            <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
-            <p>Here is the result: {{number1 + number2}}</p>
+            <form name="myForm">
+                <h3>Lets do some math!</h3>
+                <!--Create a directive to bind the input from the user. Kind of like setting a variable name-->
+                <p>Enter in a number: <input type="number" ng-model="number1"></p>
+                <p>{{myForm.number1.$vaild}}</p>
+                <!--Create another directive-->
+                <p>Enter in a second number: <input type="number" ng-model="number2"></p>
+                <p>{{myForm.number2.$vaild}}</p>
+                <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
+                <p>Here is the result: {{number1 + number2}}</p>
+            </form>
         </div>
     </body>
 </html>
