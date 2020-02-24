@@ -6,16 +6,22 @@
     </head>
     <body>
         <!--Desginate the app by adding ng-app="" it also initializes the Angular App-->
+        <!--Leave empty unless you have a controller and directive files set up-->
         <div ng-app="">
             <!--Get input from the user to use later-->
             <h2>Name : <input type="text" ng-model="name"></h2>
             <!--Update the page without even refreshing by useing angular to fill in the data!-->
-            <h2>Hello {{name}}</h1>
+            <p>Hello {{name}}</p>
+
             <h3>Lets do some math!</h3>
+            <!--Create a directive to bind the input from the user. Kind of like setting a variable name-->
             <p>Enter in a number: <input type="number" ng-model="number1"></p>
             <p>{{number1.$vaild}}</p>
             <p>Enter in a second number: <input name=num2 type="number" ng-model="number2"></p>
             {{num1.$vaild}}
+            <!--Create another directive-->
+            <p>Enter in a second number: <input type="number" ng-model="number2"></p>
+            <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
             <p>Here is the result: {{number1 + number2}}</p>
         </div>
     </body>
