@@ -6,14 +6,16 @@
     </head>
     <body>
         <!--Desginate the app by adding ng-app="" it also initializes the Angular App-->
-        <div ng-app="demoApp">
+        <div ng-app="">
             <!--Get input from the user to use later-->
             <h2>Name : <input type="text" ng-model="name"></h2>
             <!--Update the page without even refreshing by useing angular to fill in the data!-->
             <h2>Hello {{name}}</h1>
             <h3>Lets do some math!</h3>
             <p>Enter in a number: <input type="number" ng-model="number1"></p>
-            <p>Enter in a second number: <input type="number" ng-model="number2"></p>
+            <p>{{number1.$vaild}}</p>
+            <p>Enter in a second number: <input name=num2 type="number" ng-model="number2"></p>
+            {{num1.$vaild}}
             <p>Here is the result: {{number1 + number2}}</p>
         </div>
     </body>
