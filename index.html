@@ -16,14 +16,13 @@
             <form name="myForm">
                 <h3>Lets do some math!</h3>
                 <!--Create a directive to bind the input from the user. Kind of like setting a variable name-->
-                <p>Enter in a number: <input type="number" ng-model="number1"></p>
+                <p>Enter in a number: <input type="number" name="number1" ng-model="number1"></p> <span ng-show="myForm.number1.$untouched" style="color: red;">Please Enter a Number!!</span>
                 <p>{{myForm.number1.$vaild}}</p>
                 <!--Create another directive-->
-                <p>Enter in a second number: <input type="number" ng-model="number2"></p>
+                <p>Enter in a second number: <input type="number" name="number2" ng-model="number2"></p> <span ng-show="myForm.number2.$untouched" style="color: red;">Please Enter a Number!!</span>
                 <p>{{myForm.number2.$vaild}}</p>
                 <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
                 <p>Here is the result: {{number1 + number2}}</p>
-                <span ng-show="myForm.number1.$invalid || myForm.number2.$invalid">Please enter a number</span>
             </form>
         </div>
     </body>
