@@ -7,9 +7,13 @@
         <!--Desginate the app by adding ng-app=""-->
         <div ng-app="">
             <!--Get input from the user to use later-->
-            <p>Name : <input type="text" ng-model="name"></p>
+            <h2>Name : <input type="text" ng-model="name"></h2>
             <!--Update the page without even refreshing by useing angular to fill in the data!-->
-            <h1>Hello {{name}}</h1>
+            <h2>Hello {{name}}</h1>
+            <h3>Lets do some math!</h3>
+            <p>Enter in a number: <input type="number" ng-model="number1"></p>
+            <p>Enter in a second number: <input type="number" ng-model="number2"></p>
+            <p>Here is the result: {{number1 + number2}}</p>
         </div>
     </body>
 </html>
