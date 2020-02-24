@@ -23,6 +23,7 @@
                 <p>{{myForm.number2.$vaild}}</p>
                 <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
                 <p>Here is the result: {{number1 + number2}}</p>
+                <span ng-show="myForm.number1.$invalid || myForm.number2.$invalid">Please enter a number</span>
             </form>
         </div>
     </body>
