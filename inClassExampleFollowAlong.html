@@ -1,3 +1,8 @@
+<!--
+Example taken from W3Schools
+https://www.w3schools.com/angular/angular_application.asp
+-->
+
 <!DOCTYPE html>
 <html>
 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -8,12 +13,13 @@
 var app = angular.module("myShoppingList", []); 
 app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
-    
+//    Step 1.b
     //Adding Items in script
 //    $scope.addItem = function () {
 //        $scope.products.push($scope.addMe);
 //    }    
     
+    //Step 2.b
     //Removing Items in script
 //    $scope.removeItem = function (x) {
 //        $scope.products.splice(x, 1);
@@ -24,11 +30,14 @@ app.controller("myCtrl", function($scope) {
 <div ng-app="myShoppingList" ng-controller="myCtrl">
   <ul>
     <li ng-repeat="x in products">{{x}}
+    
+    <!-- Step 1.b -->    
     <!-- Removing items in code -->
 <!--        <span ng-click="removeItem($index)">×</span>-->
       </li>
   </ul>
     
+    <!-- Step 1.a -->
     <!-- Adding Items in code-->
 <!--
   <input ng-model="addMe">
