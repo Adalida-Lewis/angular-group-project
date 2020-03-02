@@ -38,11 +38,11 @@ app.controller("myCtrl", function($scope) {
 
 <div ng-app="myShoppingList" ng-controller="myCtrl">
   <ul>
+    <!--The repeater to display all the products stored-->
     <li ng-repeat="x in products">{{x}}
-    
-    <!-- Step 1.b -->    
-    <!-- Removing items in code -->
-<!--        <span ng-click="removeItem($index)">×</span>-->
+      <!--STEP 2.A-->
+      <!-- Add the remove button and hook it up to the remove function -->
+      <!-- <span ng-click="removeItem($index)">×</span> -->
       </li>
   </ul>
     
