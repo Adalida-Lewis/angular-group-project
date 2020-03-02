@@ -14,7 +14,7 @@ var app = angular.module("myShoppingList", []);
 app.controller("myCtrl", function($scope) {
     $scope.products = ["Milk", "Bread", "Cheese"];
     /* 
-      STEP 1.A
+      STEP 1.B
       Write the function to add an item 
     */
 
@@ -28,7 +28,7 @@ app.controller("myCtrl", function($scope) {
     */ 
 
     /*
-      STEP 1.B
+      STEP 2.B
       Write the function to remove an item
     */
 
@@ -45,12 +45,12 @@ app.controller("myCtrl", function($scope) {
   <ul>
     <!--The repeater to display all the products stored-->
     <li ng-repeat="x in products">{{x}}
-      <!--STEP 2.A-->
+      <!--STEP 1.A-->
       <!-- Add the remove button and hook it up to the remove function -->
       <!-- <span ng-click="removeItem($index)">×</span> -->
       </li>
   </ul>
-    <!-- STEP 2.B -->
+    <!-- STEP 2.A -->
     <!-- Add the input box for the user -->
     <!-- <input ng-model="addMe"> -->
     <!-- Add the button to call the function -->
