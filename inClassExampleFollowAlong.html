@@ -18,21 +18,26 @@ app.controller("myCtrl", function($scope) {
       Write the function to add an item 
     */
 
-//    $scope.addItem = function () {
-          /* Add a check in case the box is empty! */
+    /*
+    $scope.addItem = function () {
+      // Add a check in case the box is empty!
+      // if (!$scope.addMe) {return;}
+      // Add an item to the list!
+      // $scope.products.push($scope.addMe);
+    }    
+    */ 
 
-          /* Add an item to the list! */
-//        $scope.products.push($scope.addMe);
-//    }    
-    
     /*
       STEP 1.B
       Write the function to remove an item
     */
 
-//    $scope.removeItem = function (x) {
-//        $scope.products.splice(x, 1);
-//    }
+    /*
+    $scope.removeItem = function (x) {
+      // Remove the item from the products 'list'
+      $scope.products.splice(x, 1);
+    }
+    */
 });
 </script>
 
@@ -45,13 +50,11 @@ app.controller("myCtrl", function($scope) {
       <!-- <span ng-click="removeItem($index)">×</span> -->
       </li>
   </ul>
-    
-    <!-- Step 1.a -->
-    <!-- Adding Items in code-->
-<!--
-  <input ng-model="addMe">
-  <button ng-click="addItem()">Add</button>
--->
+    <!-- STEP 2.B -->
+    <!-- Add the input box for the user -->
+    <!-- <input ng-model="addMe"> -->
+    <!-- Add the button to call the function -->
+    <!-- <button ng-click="addItem()">Add</button> -->
 </div>
 
 <p>Click the little x to remove an item from the shopping list.</p>
