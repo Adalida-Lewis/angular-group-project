@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <!--Need this script link to pull in the angular library-->
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.9/angular.min.js"></script>
+    </head>
+    <body>
+        <!--Desginate the app by adding ng-app="" it also initializes the Angular App-->
+        <!--Leave empty unless you have a controller and directive files set up-->
+        <div ng-app="">
+            <!--Get input from the user to use later-->
+            <h2>Name : <input type="text" ng-model="name"></h2>
+            <!--Update the page without even refreshing by useing angular to fill in the data!-->
+            <p>Hello {{name}}</p>
+
+            <form name="myForm">
+                <h3>Lets do some math!</h3>
+                <!--Create a directive to bind the input from the user. Kind of like setting a variable name-->
+                <p>Enter in a number: <input type="number" name="number1" ng-model="number1"></p> <span ng-show="myForm.number1.$untouched || myForm.number1.$pristine" style="color: red;">Please Enter a Number!!</span>
+                <p>{{myForm.number1.$vaild}}</p>
+                <!--Create another directive-->
+                <p>Enter in a second number: <input type="number" name="number2" ng-model="number2"></p> <span ng-show="myForm.number2.$untouched || myForm.number2.$pristine" style="color: red;">Please Enter a Number!!</span>
+                <p>{{myForm.number2.$vaild}}</p>
+                <!--Use 'Data Binding' to call the directives and do something with them using {{}}-->
+                <p>Here is the result: {{number1 + number2}}</p>
+            </form>
+        </div>
+    </body>
+</html>
