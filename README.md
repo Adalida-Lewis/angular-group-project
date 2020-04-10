@@ -7,3 +7,9 @@
 
 Our videos go over index.html.
 The inClassExampleComplete is an example of angular for a shopping list left in for additional information on angular.
+
+Our Angular script is from 
+https://www.w3schools.com/angular/angular_intro.asp
+
+We looked at w3schools for insperation for our project.
+
